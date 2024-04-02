@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    width: 100%;
+    height:200vh;
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2023-01/1674281449_catherineasquithgallery-com-p-fon-zastavka-serii-foto-55.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.boxes {
+    width: 80%;
+    margin-top: 100px;
+    justify-content: space-between;
+    display: flex;
+    margin: 120px auto;
+    align-items: center;
+}
+
+.box {
+    width: 40%;
+    padding: 10px 10px 10px;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: gray;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: rgb(64, 64, 159)
+  }
+
+.box > img {
+    width: 100%;   
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+@media (max-width:435px) {
+    section {
+        width: 100%;
+        height: 400vh;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        margin: 30px;
+        width: 100%;
+    }
+}
